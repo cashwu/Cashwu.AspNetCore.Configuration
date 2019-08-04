@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashwu.AspNetCore.Configuration", "Cashwu.AspNetCore.Configuration\Cashwu.AspNetCore.Configuration.csproj", "{420C72D9-06DF-490E-B1DE-B0DFD0E5442D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashwu.AspNetCore.Configuration.Tests", "Cashwu.AspNetCore.Configuration.Tests\Cashwu.AspNetCore.Configuration.Tests.csproj", "{55635F0D-1469-4561-9B6C-1B0D79B076CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{420C72D9-06DF-490E-B1DE-B0DFD0E5442D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{420C72D9-06DF-490E-B1DE-B0DFD0E5442D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{420C72D9-06DF-490E-B1DE-B0DFD0E5442D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{420C72D9-06DF-490E-B1DE-B0DFD0E5442D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55635F0D-1469-4561-9B6C-1B0D79B076CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55635F0D-1469-4561-9B6C-1B0D79B076CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55635F0D-1469-4561-9B6C-1B0D79B076CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55635F0D-1469-4561-9B6C-1B0D79B076CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
