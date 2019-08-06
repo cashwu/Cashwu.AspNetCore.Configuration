@@ -7,7 +7,7 @@
         <PackageProjectUrl>https://github.com/cashwu/Cashwu.AspNetCore.Configuration</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageDescription>Asp.Net Core configuraion strongly type extension</PackageDescription>
-        <Version>1.0.0</Version>
+        <Version>1.0.1</Version>
         <Company>cashwu</Company>
         <AssemblyName>Cashwu.AspNetCore.Configuration</AssemblyName>
         <RootNamespace>Cashwu.AspNetCore.Configuration</RootNamespace>

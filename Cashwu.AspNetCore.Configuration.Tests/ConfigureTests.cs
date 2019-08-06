@@ -64,6 +64,13 @@ namespace Cashwu.AspNetCore.Configuration.Tests
             action.Should().Throw<ArgumentNullException>().And.ParamName.Should().Be(nameof(IConfiguration));
         }
 
+        [Fact]
+        public void Not_pass_AssemblyName()
+        {
+            Action action = () => new ServiceCollection().AddConfig(GivenConfiguration(), string.Empty);
+            action.Should().Throw<ArgumentNullException>().And.ParamName.Should().Be("assemblyName");
+        }
+
         private static ServiceProvider GivenServiceProvider()
         {
             return new ServiceCollection()

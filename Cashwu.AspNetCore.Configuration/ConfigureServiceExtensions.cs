@@ -8,14 +8,19 @@ namespace Cashwu.AspNetCore.Configuration
 {
     public static class ConfigureServiceExtensions
     {
-        public static IServiceCollection AddConfig(this IServiceCollection services, IConfiguration configuration, string prefixAssemblyName)
+        public static IServiceCollection AddConfig(this IServiceCollection services, IConfiguration configuration, string assemblyName)
         {
             if (configuration == null)
             {
                 throw new ArgumentNullException(nameof(IConfiguration));
             }
 
-            var types = Reflection.GetAssembliesTypeHasAttributesOf<ConfigurationSectionAttribute>(prefixAssemblyName);
+            if (string.IsNullOrWhiteSpace(assemblyName))
+            {
+                throw new ArgumentNullException(nameof(assemblyName));
+            }
+
+            var types = Reflection.GetAssembliesTypeHasAttributesOf<ConfigurationSectionAttribute>(assemblyName);
 
             foreach (var type in types)
             {
@@ -25,7 +30,7 @@ namespace Cashwu.AspNetCore.Configuration
 
                 if (configSection.IsCollections)
                 {
-                    t = typeof(List<>).MakeGenericType(configSection.CollectionType ?? type);
+                    t = typeof(List<>).MakeGenericType(configSection.CollectionType);
                 }
 
                 services.Add(new ServiceDescriptor(t, provider => configuration.GetSection(configSection.Name).Get(t), configSection.Lifetime));
