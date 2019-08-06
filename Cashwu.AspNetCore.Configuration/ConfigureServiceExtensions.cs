@@ -15,7 +15,7 @@ namespace Cashwu.AspNetCore.Configuration
                 throw new ArgumentNullException(nameof(IConfiguration));
             }
 
-            var types = Reflection.GetAssembliesTypeOf<IConfig>(prefixAssemblyName);
+            var types = Reflection.GetAssembliesTypeHasAttributesOf<ConfigurationSectionAttribute>(prefixAssemblyName);
 
             foreach (var type in types)
             {
