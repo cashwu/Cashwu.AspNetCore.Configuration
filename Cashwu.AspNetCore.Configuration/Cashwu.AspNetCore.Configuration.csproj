@@ -1,13 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>netstandard2.0</TargetFramework>
+        <TargetFrameworks>netstandard2.0</TargetFrameworks>
+        <DebugType>full</DebugType>
+        <PackageId>Cashwu.AspNetCore.Configuration</PackageId>
+        <PackageProjectUrl>https://github.com/cashwu/Cashwu.AspNetCore.Configuration</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageDescription>Asp.Net Core configuraion strongly type extension</PackageDescription>
+        <Version>1.0.0</Version>
+        <Company>cashwu</Company>
+        <AssemblyName>Cashwu.AspNetCore.Configuration</AssemblyName>
+        <RootNamespace>Cashwu.AspNetCore.Configuration</RootNamespace>
+        <Authors>cashwu</Authors>
+
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
-      <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.4" />
-      <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0" />
+        <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" PrivateAssets="All" Version="1.0.0-preview.2"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0"/>
+        <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.4"/>
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.2.0"/>
     </ItemGroup>
 
 </Project>
