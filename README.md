@@ -37,7 +37,7 @@ public void ConfigureServices(IServiceCollection services)
 
 ```csharp
 [ConfigurationSection("Test")]
-public TestConfig : IConfig
+public TestConfig
 {
     public int Id { get; set; }
 }
@@ -100,7 +100,7 @@ public class IndexController : Controller
 
 ```csharp
 [ConfigurationSection("Test", isCollections: true, collectionType: typeof(TestConfig)))]
-public TestConfig : IConfig
+public TestConfig
 {
     public int Id { get; set; }
     public string Name { get; set; }
