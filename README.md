@@ -1,6 +1,6 @@
 # Asp.Net Core configuration strongly type extension
 
-[![Build status](https://ci.appveyor.com/api/projects/status/b7dod491mc1pa3j1?svg=true)](https://ci.appveyor.com/project/cashwu/cashwu-aspnetcore-configuration)
+[![actions](https://github.com/cashwu/Cashwu.AspNetCore.Configuration/workflows/.NET%20Core/badge.svg?branch=master)](https://github.com/cashwu/Cashwu.AspNetCore.Configuration/actions)
 
 [![codecov](https://codecov.io/gh/cashwu/Cashwu.AspNetCore.Configuration/branch/master/graph/badge.svg)](https://codecov.io/gh/cashwu/Cashwu.AspNetCore.Configuration)
 
