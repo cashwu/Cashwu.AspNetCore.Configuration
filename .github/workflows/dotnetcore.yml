@@ -27,11 +27,10 @@ jobs:
         flags: unittests
         name: Cashwu.AspNetCore.Configuration
     - name: generate build number
+      if: github.ref == 'refs/heads/master'
       uses: einaregilsson/build-number@v2 
       with:
         token: ${{secrets.github_token}}
-    - name: echo build number
-      run: echo $BUILD_NUMBER
     - name: dotnet pack
       if: github.ref == 'refs/heads/master'
       run: dotnet pack ./Cashwu.AspNetCore.Configuration/Cashwu.AspNetCore.Configuration.csproj -c Release -o ../release -p:PackageVersion=1.0.$BUILD_NUMBER
